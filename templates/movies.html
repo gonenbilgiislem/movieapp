@@ -12,19 +12,11 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-3">
-            <div class="list-group">
-                {% for kategori in kategoriler %}
-                    <a href="#" class="list-group-item list-group-item-action active">{{ kategori }}</a>
-                {% endfor %}
-            </div>
+             {% include 'partials/_category.html' %}
         </div>
         <div class="col-9">
             <div class="row">
-                {% for film in filmler %}
-                    <div class="col-4">
                         {% include 'partials/_movie.html' %}
-                    </div>
-                {% endfor %}
             </div>
         </div>
     </div>
